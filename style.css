@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: #0f172a;
+}
+header{
+    background-color: transparent;
+    display: flex;
+    border-bottom: 0.5px solid grey;
+    justify-content: space-evenly;
+    height: 80px;
+    width: 100%;
+    color: white;
+    position: sticky;
+    top: 0;
+    font-size: 1.2rem;
+    align-items: center;
+    background: transparent; 
+    backdrop-filter: blur(25px);
+    z-index: 999;
+}
+header .logo{
+    font-size: 1.8rem;
+    color: beige;
+    font-family:Cambria;
+}
+header .search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+header .search input{
+    height: 30px;
+    border-radius: 8px 0px 0px 8px;
+    border: none;
+    padding: 0;
+    font-size: 1.1rem;
+    padding: 0 0 0 5px ;
+}
+header .search button {
+    border-radius: 0px 8px 8px 0px;
+    cursor: pointer;
+    width: 25%;
+    background-color: #d97706;
+    outline: none;
+    &:hover{
+        background-color: #d98d36 ;
+    }
+}
+.search span{
+    color: white;
+    font-size: 1.5rem;
+}
+.extrabtn button{
+    font-size: 1.2rem;
+    padding: 8px;
+    border-radius: 9px;
+    background-color: #d97706;
+    color: white;
+    cursor: pointer;
+    border: 1px solid black;
+    &:hover{
+        background-color: #d98d36;
+        border: 2px solid rgb(210, 209, 209);
+    }
+}
+main{
+    color: white;
+    margin: 50px;
+    margin-left: 60px;
+}
+
+main #tittle{
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 500;   
+}
+.movielist-main .moviesec{
+    margin-bottom: 40px;
+}
+.movielist-main #genere { 
+    border-left: 6px solid #f59e0b;
+    padding: 20px;
+    font-family: arial;
+    font-weight: 600;
+    margin-left: -35px;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+.movielist{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 20px;
+    color: white;
+}
+.movie-grid{
+    height: 350px;
+    width:280px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(0, 2, 110);
+    border: 1px solid whitesmoke;
+    border-radius: 9px;
+    cursor: pointer;
+}
+.movie-grid .logoM{
+    height: 70%;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.movie-grid #tittle{
+    height: 20%;
+}
+.movie-grid .info{
+    display: flex;
+    height: 10%;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+}
