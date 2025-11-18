@@ -23,7 +23,14 @@ header{
 header .logo{
     font-size: 1.8rem;
     color: beige;
+    display: flex;
     font-family:Cambria;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+header .logo img{
+    height: 40px;
 }
 header .search{
     display: flex;
@@ -91,24 +98,24 @@ main #tittle{
 }
 .movielist{
     display: grid;
-    grid-template-columns: repeat(4 , 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 20px;
     color: white;
 }
 .movie-grid{
     height: 350px;
-    width:280px;
+    width:220px;
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: rgb(0, 2, 110);
-    border: 1px solid whitesmoke;
+    background-color: #16213c;
+    border: 1px solid #3e5ea8;
     border-radius: 9px;
     cursor: pointer;
 }
 .movie-grid .logoM{
     height: 70%;
-    font-size: 3rem;
+    font-size: 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -122,4 +129,17 @@ main #tittle{
     justify-content: space-between;
     margin-left: 20px;
     margin-right: 20px;
+}
+.info #year{
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+.info #rate{
+    color: #f59e0b;
+    font-size: 1.1rem;
+    font-weight: 800;
+}
+footer{
+    color: white;
+    text-align: center;
 }
